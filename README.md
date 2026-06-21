@@ -14,18 +14,13 @@ Each solved machine has its own folder with the following structure:
 
 ```
 machine-name/
-├── README.md (detailed walkthrough)
-├── notes.md (technical notes & commands used)
-├── flags.txt (proof files)
-└── files/ (any scripts or tools used)
+└── machine-name.md (detailed walkthrough)
 ```
 
 ## How to Use
 
 1. Navigate to the machine folder you're interested in
-2. Read the **README.md** for a detailed walkthrough
-3. Check **notes.md** for specific commands and techniques
-4. View **flags.txt** for the obtained flags
+2. Read the **machine-name.md** file for the detailed walkthrough
 
 ## Machines Completed
 
