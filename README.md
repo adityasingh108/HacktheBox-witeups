@@ -6,9 +6,7 @@ A collection of solved HackTheBox machines with detailed walkthroughs and soluti
 
 | Machine | Difficulty | Category | Status | Walkthrough |
 |---------|-----------|----------|--------|-------------|
-| Cape | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cape Walkthrough](Cape/readme.md) |
-
-## Repository Structure
+| Cape | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cape Walkthrough](Cape/cape.md) |
 
 Each solved machine has its own folder with the following structure:
 
