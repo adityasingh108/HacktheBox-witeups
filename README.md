@@ -6,7 +6,7 @@ A collection of solved HackTheBox machines with detailed walkthroughs and soluti
 
 | Machine | Difficulty | Category | Status | Walkthrough |
 |---------|-----------|----------|--------|-------------|
-| | | | | |
+| Cape | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cape Walkthrough](Cape/readme.md) |
 
 ## Repository Structure
 
@@ -30,6 +30,7 @@ machine-name/
 ## Machines Completed
 
 ### Easy
+- Cape - IDOR vulnerability & Linux capabilities exploitation
 
 ### Medium
 
@@ -39,6 +40,6 @@ machine-name/
 
 ---
 
-**Last Updated:** 2026-06-21
+**Last Updated:** 2026-06-21 (Cape added)
 
 **Note:** Walkthroughs are meant for learning purposes after attempting the machine yourself.
