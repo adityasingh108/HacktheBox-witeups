@@ -8,6 +8,7 @@ A collection of solved HackTheBox machines with detailed walkthroughs and soluti
 |---------|-----------|----------|--------|-------------|
 | Cape | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cape Walkthrough](Cape/cape.md) |
 | Connected | Easy | Linux / CVE-2025-57819 / FreePBX SQLi | ✅ Completed | [Connected Walkthrough](Connected/Connected.md) |
+| Enigma | Easy | Linux / NFS / Roundcube / OliveTin | ✅ Completed | [Enigma Walkthrough](Enigma/Enigma.md) |
 
 Each solved machine has its own folder with the following structure:
 
@@ -26,6 +27,7 @@ machine-name/
 ### Easy
 - Cape - IDOR vulnerability & Linux capabilities exploitation
 - Connected - FreePBX unauthenticated SQLi (CVE-2025-57819) → RCE & privilege escalation
+- Enigma - Season 11 Live machine with NFS credential leak, Roundcube reuse, OpenSTAManager upload, and OliveTin root RCE
 
 ### Medium
 
@@ -35,6 +37,6 @@ machine-name/
 
 ---
 
-**Last Updated:** 2026-06-23 (Connected added)
+**Last Updated:** 2026-07-04 (Enigma added)
 
 **Note:** Walkthroughs are meant for learning purposes after attempting the machine yourself.
