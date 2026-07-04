@@ -9,6 +9,7 @@ A collection of solved HackTheBox machines with detailed walkthroughs and soluti
 | Cape | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cape Walkthrough](Cape/cape.md) |
 | Connected | Easy | Linux / CVE-2025-57819 / FreePBX SQLi | ✅ Completed | [Connected Walkthrough](Connected/Connected.md) |
 | Enigma | Easy | Linux / NFS / Roundcube / OliveTin | ✅ Completed | [Enigma Walkthrough](Enigma/Enigma.md) |
+| Nexus | Easy | Linux / Gitea / Krayin CRM / Git path traversal | ✅ Completed | [Nexus Walkthrough](Nexus/nexus.md) |
 
 Each solved machine has its own folder with the following structure:
 
@@ -28,6 +29,7 @@ machine-name/
 - Cape - IDOR vulnerability & Linux capabilities exploitation
 - Connected - FreePBX unauthenticated SQLi (CVE-2025-57819) → RCE & privilege escalation
 - Enigma - Season 11 Live machine with NFS credential leak, Roundcube reuse, OpenSTAManager upload, and OliveTin root RCE
+- Nexus - Gitea credential leak, Krayin CRM file upload, and root escalation via template repository path traversal
 
 ### Medium
 
@@ -37,6 +39,6 @@ machine-name/
 
 ---
 
-**Last Updated:** 2026-07-04 (Enigma added)
+**Last Updated:** 2026-07-04 (Enigma and Nexus added)
 
 **Note:** Walkthroughs are meant for learning purposes after attempting the machine yourself.
