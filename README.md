@@ -6,10 +6,12 @@ A collection of solved HackTheBox machines with detailed walkthroughs and soluti
 
 | Machine | Difficulty | Category | Status | Walkthrough |
 |---------|-----------|----------|--------|-------------|
-| Cape | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cape Walkthrough](Cape/cape.md) |
+| Cap | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cap Walkthrough](Cape/cape.md) |
 | Connected | Easy | Linux / CVE-2025-57819 / FreePBX SQLi | ✅ Completed | [Connected Walkthrough](Connected/Connected.md) |
 | Enigma | Easy | Linux / NFS / Roundcube / OliveTin | ✅ Completed | [Enigma Walkthrough](Enigma/Enigma.md) |
 | Nexus | Easy | Linux / Gitea / Krayin CRM / Git path traversal | ✅ Completed | [Nexus Walkthrough](Nexus/nexus.md) |
+| Orion | Easy | Linux / Craft CMS / Telnet | ✅ Completed | [Orion Walkthrough](Orion/Orion.md) |
+| Paperwork | Easy | Linux / LPD / PJL / Unix Socket | ✅ Completed | [Paperwork Walkthrough](Paperwork/Paperwork.md) |
 
 Each solved machine has its own folder with the following structure:
 
@@ -26,10 +28,12 @@ machine-name/
 ## Machines Completed
 
 ### Easy
-- Cape - IDOR vulnerability & Linux capabilities exploitation
+- Cap - IDOR vulnerability & Linux capabilities exploitation
 - Connected - FreePBX unauthenticated SQLi (CVE-2025-57819) → RCE & privilege escalation
 - Enigma - Season 11 Live machine with NFS credential leak, Roundcube reuse, OpenSTAManager upload, and OliveTin root RCE
 - Nexus - Gitea credential leak, Krayin CRM file upload, and root escalation via template repository path traversal
+- Orion - Craft CMS RCE via CVE-2025-32432, MySQL credential reuse, and Telnet-based privilege escalation
+- Paperwork - Custom LPD command injection, PJL path traversal, and Unix socket privilege escalation
 
 ### Medium
 
@@ -39,6 +43,6 @@ machine-name/
 
 ---
 
-**Last Updated:** 2026-07-04 (Enigma and Nexus added)
+**Last Updated:** 2026-07-12 (Orion and Paperwork added; Cap name corrected)
 
 **Note:** Walkthroughs are meant for learning purposes after attempting the machine yourself.
