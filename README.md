@@ -6,7 +6,7 @@ A collection of solved HackTheBox machines with detailed walkthroughs and soluti
 
 | Machine | Difficulty | Category | Status | Walkthrough |
 |---------|-----------|----------|--------|-------------|
-| Cap | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cap Walkthrough](Cape/cape.md) |
+| Cap | Easy | Linux / IDOR / Linux Capabilities | ✅ Completed | [Cap Walkthrough](Cap/cap.md) |
 | Connected | Easy | Linux / CVE-2025-57819 / FreePBX SQLi | ✅ Completed | [Connected Walkthrough](Connected/Connected.md) |
 | Enigma | Easy | Linux / NFS / Roundcube / OliveTin | ✅ Completed | [Enigma Walkthrough](Enigma/Enigma.md) |
 | Nexus | Easy | Linux / Gitea / Krayin CRM / Git path traversal | ✅ Completed | [Nexus Walkthrough](Nexus/nexus.md) |
@@ -43,6 +43,6 @@ machine-name/
 
 ---
 
-**Last Updated:** 2026-07-12 (Orion and Paperwork added; Cap name corrected)
+**Last Updated:** 2026-07-13 (Orion and Paperwork added; Cap name corrected)
 
 **Note:** Walkthroughs are meant for learning purposes after attempting the machine yourself.
