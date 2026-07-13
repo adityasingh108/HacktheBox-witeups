@@ -299,7 +299,6 @@ su
 # Password: ApparelMortuaryCedar22
 ```
 
-> **[POC — Root shell obtained via su]**
 
 ---
 
